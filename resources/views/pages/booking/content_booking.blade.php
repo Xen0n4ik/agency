@@ -32,8 +32,8 @@
 
                     <!-- Name input -->
                     <div class="form-outline mb-4" style="display: inline-block">
-                        <input type="text" id="typeName" class="form-control"/>
-                        <label class="form-label" for="typeName">Фамилия:</label>
+                        <input type="text" id="typeFam" class="form-control"/>
+                        <label class="form-label" for="typeFam">Фамилия:</label>
                     </div>
 
                     <!-- Phone input -->

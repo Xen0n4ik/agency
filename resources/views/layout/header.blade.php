@@ -65,7 +65,7 @@
                 </form>
                 <button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark"
                         data-mdb-toggle="modal"
-                        data-mdb-target="#exampleModalToggle1" href="#" role="button" style="font-size: 17px"> Войти
+                        data-mdb-target="#exampleModalToggle1" role="button" style="font-size: 17px"> Войти
                 </button>
             </div>
 
@@ -84,13 +84,13 @@
                         <div class="modal-body" style="text-align: justify">
                             <form name="formSingIn">
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="typeEmail" name="authEmail" class="form-control"/>
-                                    <label class="form-label" for="typeEmail">E-mail:</label>
+                                    <input type="email" id="typeEmail1" name="authEmail" class="form-control"/>
+                                    <label class="form-label" for="typeEmail1">E-mail:</label>
                                 </div>
 
                                 <div class="form-outline mb-2">
-                                    <input type="password" id="typePassword" id="authPassword" class="form-control"/>
-                                    <label class="form-label" for="typePassword">Пароль:</label>
+                                    <input type="password" id="typePassword1" id="authPassword" class="form-control"/>
+                                    <label class="form-label" for="typePassword1">Пароль:</label>
                                 </div>
 
                                 <div style="text-align: right">
@@ -114,14 +114,7 @@
                         </div>
                         <div class="modal-footer">
                             <div style="text-align: left">
-                                <label for="customRange3" class="form-label">
-                                    Нажимая на кнопку, я даю <a style="color: #0a47a9;"
-                                                                href="{{route('agreement_index')}}" target="_blank">
-                                        Согласие на обработку и передачу персональных данных</a>,
-                                    ознакомлен и принимаю условия <a style="color: #0a47a9;"
-                                                                     href="{{route('user_agreement_index')}}"
-                                                                     target="_blank"> Пользовательского соглашения</a>.
-                                </label>
+
                             </div>
                         </div>
                     </div>
@@ -141,13 +134,13 @@
                         </div>
                         <div class="modal-body" style="text-align: justify">
                             <div class="form-outline mb-4">
-                                <input type="email" id="typeEmail" class="form-control"/>
-                                <label class="form-label" for="typeEmail">E-mail:</label>
+                                <input type="email" id="typeEmail2" class="form-control"/>
+                                <label class="form-label" for="typeEmail2">E-mail:</label>
                             </div>
 
                             <div class="form-outline mb-4">
-                                <input type="password" id="typePassword" class="form-control"/>
-                                <label class="form-label" for="typePassword">Пароль:</label>
+                                <input type="password" id="typePassword2" class="form-control"/>
+                                <label class="form-label" for="typePassword2">Пароль:</label>
                             </div>
 
                             <div>
@@ -163,14 +156,7 @@
                         </div>
                         <div class="modal-footer">
                             <div style="text-align: left">
-                                <label for="customRange3" class="form-label">
-                                    Нажимая на кнопку, я даю <a style="color: #0a47a9;" data-mdb-toggle="modal"
-                                                                href="{{route('agreement_index')}}"> Согласие на
-                                        обработку и передачу персональных данных</a>,
-                                    ознакомлен и принимаю условия <a style="color: #0a47a9;"
-                                                                     href="{{route('user_agreement_index')}}"
-                                                                     target="_blank"> Пользовательского соглашения</a>.
-                                </label>
+
                             </div>
                         </div>
                     </div>
@@ -191,8 +177,8 @@
                         </div>
                         <div class="modal-body" style="text-align: justify">
                             <div class="form-outline mb-4">
-                                <input type="email" id="typeEmail" class="form-control"/>
-                                <label class="form-label" for="typeEmail">E-mail:</label>
+                                <input type="email" id="typeEmail3" class="form-control"/>
+                                <label class="form-label" for="typeEmail3">E-mail:</label>
                             </div>
 
                             <div>
@@ -208,14 +194,7 @@
                         </div>
                         <div class="modal-footer">
                             <div style="text-align: left">
-                                <label for="customRange3" class="form-label">
-                                    Нажимая на кнопку, я даю <a style="color: #0a47a9;" data-mdb-toggle="modal"
-                                                                href="{{route('agreement_index')}}"> Согласие на
-                                        обработку и передачу персональных данных</a>,
-                                    ознакомлен и принимаю условия <a style="color: #0a47a9;"
-                                                                     href="{{route('user_agreement_index')}}"
-                                                                     target="_blank"> Пользовательского соглашения</a>.
-                                </label>
+
                             </div>
                         </div>
                     </div>

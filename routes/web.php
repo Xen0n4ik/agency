@@ -41,9 +41,9 @@ Route::get('/booking', [BookingController::class, 'index'])->name('booking_index
 
 Route::get('/fix_page', [FixController::class, 'index'])->name('fix_index');
 
-Route::get('/accord', [AgreementController::class, 'index'])->name('agreement_index');
+//Route::get('/accord', [AgreementController::class, 'index'])->name('agreement_index');
 
-Route::get('/user_agreement', [UserAgreementController::class, 'index'])->name('user_agreement_index');
+//Route::get('/user_agreement', [UserAgreementController::class, 'index'])->name('user_agreement_index');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login_account');
 
