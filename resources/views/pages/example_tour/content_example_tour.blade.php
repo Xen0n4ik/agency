@@ -54,13 +54,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ $row->IMG1 }}" class="d-block w-100" alt="Wild Landscape"/>
+                                <img src="{{ $row->IMG1 }}" class="d-block w-100" />
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ $row->IMG2 }}" class="d-block w-100" alt="Camera"/>
+                                <img src="{{ $row->IMG2 }}" class="d-block w-100"/>
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ $row->IMG3 }}" class="d-block w-100" alt="Exotic Fruits"/>
+                                <img src="{{ $row->IMG3 }}" class="d-block w-100"/>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
@@ -82,7 +82,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="{{ $row2->HEAD }}">
                                 <button
-                                    class="accordion-button @if ($id==0 )  @else collapsed @endif"
+                                    class="accordion-button @if ($id!=0) collapsed @endif"
                                     type="button"
                                     data-mdb-toggle="collapse"
                                     data-mdb-target="#{{ $row2->COLLAPSE }}"
@@ -96,13 +96,12 @@
                             </h2>
                             <div id="{{ $row2->COLLAPSE }}" class="accordion-collapse collapse @if ($id==0 ) show @else @endif " aria-labelledby="{{ $row2->HEAD }}" data-mdb-parent="#accordionExample">
                                 <div class="accordion-body" style="font-size: 1.7em; font-family: 'Garamond'">
-                                    {{ $row2->PROGRAMM }}
+                                    {{ $row2->PROGRAMM}}
                                 </div>
                             </div>
                         </div>
                         @endforeach
                     </div>
-
 
 
                     <h1 style="margin: 60px 0 30px 0; font-family: 'Bookman Old Style'; text-align: center;color: #0a47a9">
@@ -219,14 +218,14 @@
                         <form>
                             <!-- Name input -->
                             <div class="form-outline mb-2">
-                                <input type="text" id="author" class="form-control" />
+                                <input type="text" id="author1" class="form-control" />
                                 <label class="form-label" for="form4Example1">Имя:</label>
                             </div>
 
                             <!-- Message input -->
                             <div class="form-outline mb-2">
                                 <textarea class="form-control"
-                                          id="message"
+                                          id="message1"
                                           rows="4"
                                           style="min-height: 110px; font-size: 20px"
                                           data-mdb-container="body"
@@ -326,7 +325,7 @@
 
 </div>
 @endforeach
-@section('js_bottom')
+@section('js_content')
     <script>
     function show_write_comment(){
         document.location.href = "{{route('write_comment_index', $ID_TOUR)}}";
@@ -337,8 +336,8 @@
     }
 
     function comment_add_tour() {
-        let author_data = document.getElementById("author").value;
-        let message_data = document.getElementById("message").value;
+        let author_data = document.getElementById("author1").value;
+        let message_data = document.getElementById("message1").value;
         let id_tour_data = document.getElementById("id_tour").value;
         $.ajax({
         async: false,

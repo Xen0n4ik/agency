@@ -45,7 +45,7 @@
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <input type="email"
-                               id="form4Example2"
+                               id="emailbooking"
                                class="form-control"
                                data-mdb-container="body"
                                data-mdb-toggle="popover"
@@ -62,7 +62,7 @@
 
                     <!-- Default checkbox -->
                     <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <input class="form-check-input" type="checkbox" value="" id="agree" />
                         <label class="form-check-label" for="flexCheckDefault" style="color: #666666">Даю <a data-mdb-toggle="modal" data-mdb-target="#staticBackdrop" style="color: #0062ff">согласие на обработку перснальных данных</a></label>
                     </div>
 
@@ -114,10 +114,27 @@
                         </div>
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4" style="font-size: 16px">Забронировать </button>
+                    <button type="submit" class="btn btn-primary btn-block mb-4" onclick="add_booking()" style="font-size: 16px">Забронировать </button>
                 </form>
             </div>
     </div>
 </div>
+
+@section('js_content')
+    <script>
+        function add_booking() {
+            let name_data = document.getElementById("typeName").value;
+            let lastname_data = document.getElementById("typeFam").value;
+            let phone_data = document.getElementById("typeFam").value;
+            let email_data = document.getElementById("emailbooking").value;
+            let agree_data = document.getElementById("agree").value;
+            let id_tour_data = document.getElementById("id_tour").value;
+
+
+            console.log(name_data);
+
+        }
+    </script>
+@endsection
 
 

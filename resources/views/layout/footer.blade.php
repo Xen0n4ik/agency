@@ -3,30 +3,9 @@
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
     <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom"
     >
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-            <span style="font-size: 20px">Присоединяйтесь к нам в социальных сетях:</span>
-        </div>
-        <!-- Left -->
 
-        <!-- Right -->
-        <div>
-            <a href="https://www.facebook.com/groups/1663908647289616" class="me-4 text-reset" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/TripRussian" class="me-4 text-reset" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/_russian_trip_?utm_medium=copy_link" class="me-4 text-reset" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://vk.com/russian___trip/" class="me-4 text-reset" target="_blank">
-                <i class="fab fa-vk"></i>
-            </a>
-        </div>
-        <!-- Right -->
     </section>
     <!-- Section: Social media -->
 
